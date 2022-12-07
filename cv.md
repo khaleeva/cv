@@ -32,6 +32,7 @@ Efficiency, purposefulness, resistance to stress, the ability to work in a team,
 + Git  
 + PhotoShop
 + React  
++ Next.js
 - Languages  
 
   - Russian (native speaker);  
