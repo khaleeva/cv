@@ -1,7 +1,7 @@
 **My Personal information**
 ---
 **Name** Eugenia Khaleeva  
-**Phone number** +48573818265
+**Phone number** +48573818265  
 **Email** khaleeva20990@gmail.com  
 
 **Information about me**  
