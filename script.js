@@ -1,13 +1,18 @@
-const navLinks = document.querySelectorAll('.nav-link')
+document.addEventListener("DOMContentLoaded", function () {
+    document.location.href='#about'
+});
 
+const navLinks = document.querySelectorAll('.nav-link')
 
 for (let link of navLinks) {
 
-    if(link.classList.contains("active-link")){
-        link.classList.remove("active-link");
-    }
 
     link.addEventListener('click', function() {
+
+        if(link.classList.contains("active-link")){
+            link.classList.remove("active-link");
+        }
+
         let setClasses = !this.classList.contains('active-link');
         setClass(navLinks, 'active-link', 'remove');
         if (setClasses) {
@@ -18,9 +23,9 @@ for (let link of navLinks) {
     })
 }
 
-function setClass(elem, className, fnName) {
+function setClass(elem, className, action) {
     for (let i = 0; i < elem.length; i++) {
-        elem[i].classList[fnName](className);
+        elem[i].classList[action](className);
     }
 }
 
