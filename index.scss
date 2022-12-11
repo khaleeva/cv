@@ -192,7 +192,7 @@ h1, h2 {
   .about__avatar {
     width: 100%;
     max-width: 450px;
-    padding: 15px;
+    padding: 5px;
     border: 1px solid #c7c5c5;
 
     .avatar {
@@ -200,6 +200,7 @@ h1, h2 {
       height: 100%;
       background-image: url("photo.jpeg");
       background-size: cover;
+      background-position: 100%  20%;
     }
   }
 }
@@ -275,6 +276,11 @@ h1, h2 {
 
       .experience-info {
         margin-top: 10px;
+
+        li{
+          list-style-type: circle;
+        }
+
       }
     }
   }
@@ -312,8 +318,6 @@ h1, h2 {
   padding: 20px 0;
   border-top: 1px dashed #FFFFFF;
 
-
-
   .footer__nav{
     display: flex;
     justify-content: space-between;
@@ -321,6 +325,10 @@ h1, h2 {
 
     a{
       color: #FFFFFF;
+
+      span{
+        margin: 0 10px;
+      }
 
       i{
         font-size: 20px;
