@@ -1,16 +1,28 @@
 const navLinks = document.querySelectorAll('.nav-link')
 
-    navLinks.forEach((elem)=>{
-        if(elem.classList.contains('active-link')){
-            elem.classList.remove('active-link')
-        } else {
-            elem.addEventListener('click',()=>{
-                elem.classList.add('active-link')
-            })
+
+for (let link of navLinks) {
+
+    if(link.classList.contains("active-link")){
+        link.classList.remove("active-link");
+    }
+
+    link.addEventListener('click', function() {
+        let setClasses = !this.classList.contains('active-link');
+        setClass(navLinks, 'active-link', 'remove');
+        if (setClasses) {
+            this.classList.add("active-link");
+        } else{
+            this.classList.remove("active-link");
         }
-
-
     })
+}
+
+function setClass(elem, className, fnName) {
+    for (let i = 0; i < elem.length; i++) {
+        elem[i].classList[fnName](className);
+    }
+}
 
 
 

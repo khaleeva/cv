@@ -203,11 +203,15 @@ h1, h2 {
 }
 .skills .skills__container .skills__container-item .skills-icon i {
   font-size: 40px;
-  color: #ffffff;
   display: block;
 }
-.skills .skills__container .skills__container-item .skills-icon img {
+.skills .skills__container .skills__container-item .skills-icon .next {
   width: 40px;
+  height: 50px;
+  filter: brightness(0) invert(1);
+}
+.skills .skills__container .skills__container-item .skills-icon img {
+  width: 50px;
   height: 50px;
   filter: brightness(0) invert(1);
 }
