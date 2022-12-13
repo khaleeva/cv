@@ -44,6 +44,10 @@ h1, h2 {
   font-weight: 400;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 ._inner-container {
   max-width: 1250px;
   margin: 0 auto;
@@ -130,7 +134,6 @@ h1, h2 {
   font-size: 15px;
   text-align: right;
   letter-spacing: 1px;
-  font-weight: normal;
 }
 .about .about__container .nav-contacts {
   display: flex;
