@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
           rel="stylesheet">
     <script src="https://kit.fontawesome.com/bb643b3452.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -42,11 +43,11 @@
                     <p class="bold">My English level is Intermidiate (В1).</p>
                     <nav class="nav-contacts">
                         <ul>
-                            <li><a href="https://www.linkedin.com/in/eugenia-khaleeva-b66035157"><i
+                            <li><a href="https://www.linkedin.com/in/eugenia-khaleeva-b66035157"  target="_blank"><i
                                     class="fa-brands fa-linkedin"></i></a></li>
                             <li><a href="mailto:khaleeva20990@gmail.com"><i class="fa fa-google-plus"></i></a></li>
                             <li><a href="https://telegram.me/zhkhh"><i class="fa-brands fa-telegram"></i></a></li>
-                            <li><a href="https://www.instagram.com/khharleeva/"><i
+                            <li><a href="https://www.instagram.com/khharleeva/"  target="_blank"><i
                                     class="fa-brands fa-instagram"></i></a></li>
                         </ul>
                     </nav>
@@ -200,32 +201,44 @@
                 <h2>Projects</h2>
                 <p class="subtitle">My projects and code example</p>
                 <div class="project__container">
-
                         <div class="project__container-item">
                             <h3>Data-center Datahata</h3>
                             <p class="date-project"><span>November 2021 - December 2021</span></p>
                             <p>Development of a corporate website for Datahata LLC in accordance with the design layout of the customer.</p>
                             <p>The following technologies were used to develop the site: (<span>HTML, SCSS, JS, Gulp, PHP-mailer, Fetch request to api</span>)</p>
-                            <p><a href="https://github.com/khaleeva/datacenter">GitHub</a></p>
-                            <a class="show-btn" href="https://www.datahata.by/">Show project</a>
+
+                            <div class="project-btn">
+                                <a class="show-btn" href="https://www.datahata.by/" target="_blank">Show project</a>
+                                <a class="show-btn" href="https://github.com/khaleeva/datacenter/tree/datacenter" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div>
                         </div>
+                        <span class="line"></span>
                         <div class="project__container-item">
                             <h3>Social Network</h3>
-                            <p><span>Work in progress</span></p>
-                            <p><a href="https://www.datahata.by/">Show project</a></p>
-                            <p><a href="https://github.com/khaleeva/datacenter">GitHub</a></p>
+                            <p class="date-project"><span>Work in progress</span></p>
                             <p>Development of a corporate website for Datahata LLC in accordance with the design layout of the customer.</p>
-                            <p>The following technologies were used to develop the site:</p>
-                            <ul>
-                                <li>Gulp</li>
-                                <li>SCSS</li>
-                                <li>HTML</li>
-                                <li>PHP-mailer</li>
-                                <li>JS</li>
-                                <li>Fetch request to api</li>
-                            </ul>
+                            <p>The following technologies were used to develop the site: (<span>React, Redux, MUI, Fetch request to api</span>)</p>
+
+                            <div class="project-btn">
+                                <a class="show-btn" href="https://www.datahata.by/" target="_blank">Show project</a>
+                                <a class="show-btn" href="https://github.com/khaleeva/datacenter/tree/datacenter" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div>
                         </div>
+                        <span class="line"></span>
                         <div class="project__container-exampleCode">
+                            <h3>My codewars's example</h3>
+                                <pre class="prettyprint">
+    function digitalRoot(n) {
+        let result = 0;
+        result = n.toString().split('').reduce((el, acc) => Number(el) + Number(acc), 0);
+        return n.toString().length > 1 ? digitalRoot(result) : n;
+    }
+                                </pre>
+
+
+
+                                <a class="show-btn _task-btn" href="https://www.codewars.com/kata/541c8630095125aba6000c00" target="_blank">Show task</a>
+
 
                         </div>
                     </div>
@@ -246,11 +259,11 @@
                         <p><a href="tel:+48573818265">+48573818265</a></p>
                         <p><a href="mailto:khaleeva20990@gmail.com">khaleeva20990@gmail.com</a></p>
                         <ul>
-                            <li><a href="https://www.linkedin.com/in/eugenia-khaleeva-b66035157"><i
+                            <li><a href="https://www.linkedin.com/in/eugenia-khaleeva-b66035157"  target="_blank"><i
                                     class="fa-brands fa-linkedin"></i></a></li>
                             <li><a href="mailto:khaleeva20990@gmail.com"><i class="fa fa-google-plus"></i></a></li>
                             <li><a href="https://telegram.me/zhkhh"><i class="fa-brands fa-telegram"></i></a></li>
-                            <li><a href="https://www.instagram.com/khharleeva/"><i
+                            <li><a href="https://www.instagram.com/khharleeva/"  target="_blank"><i
                                     class="fa-brands fa-instagram"></i></a></li>
                         </ul>
                     </div>
