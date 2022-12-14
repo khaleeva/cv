@@ -33,8 +33,7 @@ window.addEventListener('scroll', () => {
             let id = el.getAttribute('id');
             let top = el.offsetTop - 50;
             let bottom = el.offsetHeight + top;
-            console.log('top', top)
-            console.log('bottom', bottom)
+
 
         let currentLink = result.filter(i => i.hash.slice(1) === id)
 
