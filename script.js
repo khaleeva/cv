@@ -3,11 +3,14 @@
 // });
 
 const navLinks = document.querySelectorAll('.nav-link')
-
+let sections = document.querySelectorAll('section')
 const result = [];
+
 for (const node of navLinks.values()) {
     result.push(node)
 }
+
+
 
 function changeActiveClass(elem, className) {
     if (elem.classList.contains(className)) {
@@ -24,32 +27,18 @@ function changeActiveClass(elem, className) {
 
 
 window.addEventListener('scroll', () => {
-    let scrollTop = window.scrollY;
+    let scroll = window.pageYOffset
 
-    console.log(scrollTop)
-
-    let sections = document.querySelectorAll('section')
     sections.forEach(el => {
+            let id = el.getAttribute('id');
             let top = el.offsetTop - 50;
             let bottom = el.offsetHeight + top;
-        // if (scrollTop >= 3381){
-        //     let lastLink = result.filter(i => i.hash.slice(1) === 'contacts')
-        //         lastLink.map(i => {
-        //             if (i.classList.contains("active-link")) {
-        //                 i.classList.remove("active-link");
-        //             }
-        //             let setClasses = !i.classList.contains('active-link');
-        //             setClass(navLinks, 'active-link', 'remove');
-        //             if (setClasses) {
-        //                 i.classList.add("active-link");
-        //             } else {
-        //                 i.classList.remove("active-link");
-        //             }
-        //         })
-        // }
-            if (scrollTop > top && scrollTop < bottom) {
-                let id = el.getAttribute('id');
-                let currentLink = result.filter(i => i.hash.slice(1) === id)
+            console.log('top', top)
+            console.log('bottom', bottom)
+
+        let currentLink = result.filter(i => i.hash.slice(1) === id)
+
+            if (scroll > top && scroll < bottom) {
                 currentLink.map(i => {
                         if (i.classList.contains("active-link")) {
                             i.classList.remove("active-link");
