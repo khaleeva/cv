@@ -1,6 +1,6 @@
-document.addEventListener("DOMContentLoaded", function () {
-    document.location.href = '#about'
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//     document.location.href = '#about'
+// });
 
 const navLinks = document.querySelectorAll('.nav-link')
 
@@ -26,10 +26,27 @@ function changeActiveClass(elem, className) {
 window.addEventListener('scroll', () => {
     let scrollTop = window.scrollY;
 
+    console.log(scrollTop)
+
     let sections = document.querySelectorAll('section')
     sections.forEach(el => {
             let top = el.offsetTop - 50;
             let bottom = el.offsetHeight + top;
+        // if (scrollTop >= 3381){
+        //     let lastLink = result.filter(i => i.hash.slice(1) === 'contacts')
+        //         lastLink.map(i => {
+        //             if (i.classList.contains("active-link")) {
+        //                 i.classList.remove("active-link");
+        //             }
+        //             let setClasses = !i.classList.contains('active-link');
+        //             setClass(navLinks, 'active-link', 'remove');
+        //             if (setClasses) {
+        //                 i.classList.add("active-link");
+        //             } else {
+        //                 i.classList.remove("active-link");
+        //             }
+        //         })
+        // }
             if (scrollTop > top && scrollTop < bottom) {
                 let id = el.getAttribute('id');
                 let currentLink = result.filter(i => i.hash.slice(1) === id)

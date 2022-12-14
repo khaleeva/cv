@@ -210,7 +210,8 @@ h1, h2 {
 
 .skills {
 
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
   text-align: center;
 
   h2 {
@@ -294,7 +295,8 @@ h1, h2 {
 }
 
 .experience{
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
 
   .experience__container {
     display: flex;
@@ -318,7 +320,10 @@ h1, h2 {
 }
 
 .education{
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+
 
   h2 {
     color: #ffffff;
@@ -338,41 +343,75 @@ h1, h2 {
 }
 
 .project{
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+
+
+  .project__container-item{
+    display: flex;
+    flex-direction: column;
+
+
+      .show-btn{
+        display: flex;
+        height: 35px;
+        width: 150px;
+        border: 1px solid #020202;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+          color:#020202;
+
+      }
+
+      .date-project{
+        margin: 10px 0;
+        span{
+          color:#7d7d7d;
+          font-size: 12px;
+        }
+      }
+      p{
+        span{
+          font-weight: 700;
+        }
+      }
+
+
+  }
 }
 
 .contacts{
-  padding: 80px 0;
-}
+  padding-top: 80px;
+  padding-bottom:80px;
+  font-family: "Open Sans", sans-serif;
+  //height: 600px;
 
-.footer{
-  padding: 20px 0;
-  border-top: 1px dashed #FFFFFF;
 
-  .footer__nav{
+  h2{
+    color: #FFFFFF;
+  }
+
+.contacts__container{
+  display: flex;
+ flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+
+  h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .contacts__container-info{
+    width: 50%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 
-    a{
-      color: #FFFFFF;
-
-      span{
-        margin: 0 10px;
-      }
-
-      i{
-        font-size: 20px;
-      }
-
-      img{
-        width: 100px;
-        height: auto;
-
-      }
-    }
-
     ul {
+      margin-top: 30px;
       display: flex;
 
       li {
@@ -400,6 +439,52 @@ h1, h2 {
         }
       }
     }
+
+    p{
+      margin-bottom: 10px;
+      a{
+        color: #7d7d7d;
+      }
+
+      &:hover a{
+        font-weight: bold;
+        color: #FFFFFF;
+        transition: all 3ms ease-in-out ;
+      }
+    }
+  }
+
+
+
+}
+}
+
+.footer{
+  padding: 20px 0;
+  .footer__nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+    a{
+      color: #FFFFFF;
+
+      span{
+        margin: 0 10px;
+      }
+
+      i{
+        font-size: 20px;
+      }
+
+      img{
+        width: 100px;
+        height: auto;
+
+      }
+    }
+
+
   }
 }
 

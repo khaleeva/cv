@@ -178,7 +178,8 @@ h1, h2 {
 }
 
 .skills {
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
   text-align: center;
 }
 .skills h2 {
@@ -228,7 +229,8 @@ h1, h2 {
 }
 
 .experience {
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .experience .experience__container {
   display: flex;
@@ -247,7 +249,8 @@ h1, h2 {
 }
 
 .education {
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .education h2 {
   color: #ffffff;
@@ -263,16 +266,97 @@ h1, h2 {
 }
 
 .project {
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.project .project__container-item {
+  display: flex;
+  flex-direction: column;
+}
+.project .project__container-item .show-btn {
+  display: flex;
+  height: 35px;
+  width: 150px;
+  border: 1px solid #020202;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: #020202;
+}
+.project .project__container-item .date-project {
+  margin: 10px 0;
+}
+.project .project__container-item .date-project span {
+  color: #7d7d7d;
+  font-size: 12px;
+}
+.project .project__container-item p span {
+  font-weight: 700;
 }
 
 .contacts {
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  font-family: "Open Sans", sans-serif;
+}
+.contacts h2 {
+  color: #FFFFFF;
+}
+.contacts .contacts__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.contacts .contacts__container h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.contacts .contacts__container .contacts__container-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts .contacts__container .contacts__container-info ul {
+  margin-top: 30px;
+  display: flex;
+}
+.contacts .contacts__container .contacts__container-info ul li {
+  display: block;
+  text-align: center;
+  line-height: 32px;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #c7c5c5;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.contacts .contacts__container .contacts__container-info ul li a {
+  color: #FFFFFF;
+}
+.contacts .contacts__container .contacts__container-info ul li:hover {
+  background: #FFFFFF;
+  transition: all 0.2s ease-in-out;
+}
+.contacts .contacts__container .contacts__container-info ul li:hover a {
+  color: #020202;
+  transition: all 0.2s ease-in-out;
+}
+.contacts .contacts__container .contacts__container-info p {
+  margin-bottom: 10px;
+}
+.contacts .contacts__container .contacts__container-info p a {
+  color: #7d7d7d;
+}
+.contacts .contacts__container .contacts__container-info p:hover a {
+  font-weight: bold;
+  color: #FFFFFF;
+  transition: all 3ms ease-in-out;
 }
 
 .footer {
   padding: 20px 0;
-  border-top: 1px dashed #FFFFFF;
 }
 .footer .footer__nav {
   display: flex;
@@ -291,30 +375,6 @@ h1, h2 {
 .footer .footer__nav a img {
   width: 100px;
   height: auto;
-}
-.footer .footer__nav ul {
-  display: flex;
-}
-.footer .footer__nav ul li {
-  display: block;
-  text-align: center;
-  line-height: 32px;
-  width: 32px;
-  height: 32px;
-  border: 1px solid #c7c5c5;
-  margin-left: 20px;
-  cursor: pointer;
-}
-.footer .footer__nav ul li a {
-  color: #FFFFFF;
-}
-.footer .footer__nav ul li:hover {
-  background: #FFFFFF;
-  transition: all 0.2s ease-in-out;
-}
-.footer .footer__nav ul li:hover a {
-  color: #020202;
-  transition: all 0.2s ease-in-out;
 }
 
 /*# sourceMappingURL=index.css.map */
