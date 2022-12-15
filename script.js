@@ -5,9 +5,14 @@
 const navLinks = document.querySelectorAll('.nav-link')
 const sections = document.querySelectorAll('section')
 const burger = document.querySelector('.burger__menu')
+const burgerMenu = document.querySelector('.burger__menu-nav')
+const contentHeight = document.documentElement.clientHeight
 
 burger.addEventListener('click', function () {
     burger.classList.toggle('openMenu')
+    burgerMenu.classList.toggle('active-menu')
+    burgerMenu.style.height = contentHeight + 'px'
+
 })
 
 const result = [];

@@ -151,6 +151,43 @@ h1, h2 {
     }
   }
 
+  .active-menu{
+    right: 0 !important;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .burger__menu-nav{
+    visibility: hidden;
+    @media (max-width: 1024px) {
+      visibility: visible;
+      position: fixed;
+      top:60px;
+      right: -180px;
+      max-width: 320px;
+      background-color: rgba(0,0,0,0.3);
+      padding: 40px 20px;
+      transition: all 0.3s ease-in-out;
+    }
+
+
+
+    ul{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      li{
+        padding: 20px;
+
+
+        a {
+          color: #FFFFFF;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
 
   @media (max-width: 1024px) {
     .burger__menu {
