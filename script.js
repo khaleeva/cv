@@ -3,7 +3,13 @@
 // });
 
 const navLinks = document.querySelectorAll('.nav-link')
-let sections = document.querySelectorAll('section')
+const sections = document.querySelectorAll('section')
+const burger = document.querySelector('.burger__menu')
+
+burger.addEventListener('click', function () {
+    burger.classList.toggle('openMenu')
+})
+
 const result = [];
 
 for (const node of navLinks.values()) {
@@ -37,6 +43,11 @@ window.addEventListener('scroll', () => {
 
         let currentLink = result.filter(i => i.hash.slice(1) === id)
 
+        // currentLink.map(i => i.hash.slice(1) !== 'about' ? document.querySelector('.header').style.backgroundColor = '#000'
+        //     : document.querySelector('.header').style.backgroundColor = 'transparent')
+
+
+
             if (scroll > top && scroll < bottom) {
                 currentLink.map(i => {
                         if (i.classList.contains("active-link")) {
@@ -68,6 +79,8 @@ function setClass(elem, className, action) {
         elem[i].classList[action](className);
     }
 }
+
+
 
 
 
