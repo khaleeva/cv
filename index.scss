@@ -39,6 +39,21 @@ main, section, header, footer {
   width: 100%;
 }
 
+.pd-80{
+  padding-top: 80px!important;
+  padding-bottom: 80px!important;
+
+  @media (max-width: 1024px) and (min-width: 769px) {
+    padding-top: 30px!important;
+    padding-bottom: 30px!important;
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 20px!important;
+    padding-bottom: 20px!important;
+  }
+}
+
 h1, h2 {
   font-size: 32px;
   color: #ffc705;
@@ -58,6 +73,10 @@ h1, h2 {
   min-width: 320px;
   margin: 0 auto;
   padding: 0 15px;
+
+  @media (max-width: 1024px) {
+    padding: 0 20px;
+  }
 }
 
 .active-link {
@@ -86,6 +105,10 @@ h1, h2 {
   margin: 0 0 60px 0;
   line-height: 28px;
 
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+
 }
 
 .header {
@@ -99,7 +122,7 @@ h1, h2 {
 
   @media (max-width: 1024px) {
     height: 100px;
-    background-color: transparent;
+    background-color: rgba(0,0,0,0.3);
   }
 
   .header__nav {
@@ -132,8 +155,8 @@ h1, h2 {
 
   @media (max-width: 1024px) {
     .burger__menu {
-      width: 32px;
-      height: 23px;
+      width: 42px;
+      height: 28px;
       margin-left: auto;
       position: relative;
       cursor: pointer;
@@ -198,6 +221,11 @@ h1, h2 {
     background-position: 50% 25%;
     margin-top: 0;
   }
+
+  @media (max-width: 768px){
+    background-position: 50% 0;
+    margin-top: 0;
+  }
 }
 
 .about {
@@ -211,14 +239,18 @@ h1, h2 {
     position: absolute;
     top: 160px;
     left: 15px;
-    @media (max-width: 1024px) {
-      top: 50%;
+    @media (max-width: 1024px){
+      top: 78%;
     }
 
     h1, h2 {
       text-align: left;
-
-
+      @media (max-width: 1024px) {
+        font-size: 24px;
+        line-height: 40px;
+        background-color: rgba(0,0,0,0.5);
+        padding: 0 10px;
+      }
     }
 
     h2 {
@@ -226,7 +258,6 @@ h1, h2 {
     }
 
     p {
-
       margin: 0 0 20px 0;
       line-height: 24px;
       font-size: 14px;
@@ -242,8 +273,7 @@ h1, h2 {
       justify-content: flex-start;
 
       @media (max-width: 1024px) {
-
-        margin-top: 40px;
+        margin-top: 20px;
       }
 
       ul {
@@ -256,7 +286,7 @@ h1, h2 {
           width: 32px;
           height: 32px;
           border: 1px solid #ffc705;
-          background: rgba(0, 0, 0, 0.7);
+          background: rgba(0, 0, 0, 0.5);
           margin-right: 20px;
           cursor: pointer;
 
@@ -285,9 +315,6 @@ h1, h2 {
 
 
 .skills {
-
-  padding-top: 80px;
-  padding-bottom: 80px;
   text-align: center;
 
   .skills__container {
@@ -295,12 +322,25 @@ h1, h2 {
     display: flex;
     flex-wrap: wrap;
 
+    @media (max-width: 768px) {
+      //flex-direction: column;
+      padding: 20px 0;
+    }
+
     .skills__container-item {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 25%;
       padding: 0 40px;
+      width: 25%;
+
+      @media (max-width: 768px) and (min-width: 421px) {
+        width: 50%;
+      }
+
+      @media (max-width: 420px) {
+        width: 100%;
+      }
 
       .skills-icon {
         width: 90px;
@@ -313,18 +353,32 @@ h1, h2 {
         i {
           font-size: 40px;
           display: block;
+
+          @media (max-width: 420px) {
+            font-size: 55px;
+          }
         }
 
         .next {
           width: 40px;
           height: 50px;
           filter: brightness(0) invert(1);
+
+          @media (max-width: 420px) {
+            width: 55px;
+            height: 50px;
+          }
         }
 
         img {
           width: 50px;
           height: 50px;
           filter: brightness(0) invert(1);
+
+          @media (max-width: 420px) {
+            width: 60px;
+            height: 60px;
+          }
         }
       }
 
@@ -342,9 +396,6 @@ h1, h2 {
 }
 
 .experience {
-  padding-top: 80px;
-  padding-bottom: 80px;
-
   .experience__container {
     display: flex;
     flex-direction: column;
@@ -358,7 +409,22 @@ h1, h2 {
         margin-top: 10px;
 
         li {
-          list-style-type: circle;
+          list-style-type: none;
+          position: relative;
+
+          &:before{
+            content:'';
+            display: block;
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background-color: #ffc705;
+            border-radius: 50%;
+            left: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+
+          }
         }
 
       }
@@ -367,11 +433,6 @@ h1, h2 {
 }
 
 .education {
-  padding-top: 80px;
-  padding-bottom: 80px;
-
-
-
   .education__container {
     display: flex;
     flex-direction: column;
@@ -412,10 +473,20 @@ h1, h2 {
       }
 
       &:hover {
-
         background-color: #ffc705;
         color: #020202;
         transition: all 0.2s ease-in-out;
+      }
+
+    }
+
+    .project-btn {
+      display: flex;
+      margin-top: 30px;
+
+      @media (max-width: 768px) {
+        justify-content: center;
+        align-items: center;
       }
 
     }
@@ -424,32 +495,23 @@ h1, h2 {
       .prettyprint {
         padding-top: 20px;
         border: none;
+        overflow: auto;
         span{
           color: #fff;
         }
+
       }
 
       h3 {
         margin-bottom: 10px;
       }
 
-      ._task-btn {
-        margin-top: 30px;
-      }
 
     }
 
     .project__container-item {
       display: flex;
       flex-direction: column;
-
-      .project-btn {
-        display: flex;
-        margin-top: 30px;
-
-      }
-
-
       .date-project {
         margin: 10px 0;
 
@@ -459,13 +521,6 @@ h1, h2 {
         }
       }
 
-      //p {
-      //  span {
-      //    color: #ffc705;
-      //  }
-      //}
-
-
     }
   }
 
@@ -473,8 +528,6 @@ h1, h2 {
 }
 
 .contacts {
-  padding-top: 80px;
-  padding-bottom: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -484,20 +537,31 @@ h1, h2 {
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
-    padding: 60px;
+    padding: 70px;
     border: 1px solid #ffc705;
-    width: 50%;
+    //width: 50%;
+
+    @media (max-width: 640px) {
+      padding: 30px;
+    }
 
     h3 {
       font-size: 20px;
       margin-bottom: 20px;
+
+      @media (max-width: 640px) {
+        font-size: 16px;
+      }
     }
 
     .contacts__container-info {
-      width: 50%;
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      @media (max-width: 640px) {
+        font-size: 12px;
+      }
 
       ul {
         margin-top: 30px;
@@ -512,6 +576,10 @@ h1, h2 {
           border: 1px solid #ffc705;
           margin-left: 20px;
           cursor: pointer;
+
+          &:first-child{
+            margin-left: 0;
+          }
 
           a {
             color: #ffc705;
