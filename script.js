@@ -6,6 +6,7 @@ const navLinks = document.querySelectorAll('.nav-link')
 const sections = document.querySelectorAll('section')
 const burger = document.querySelector('.burger__menu')
 const burgerMenu = document.querySelector('.burger__menu-nav')
+const header = document.querySelector('.header')
 const contentHeight = document.documentElement.clientHeight
 
 
@@ -38,8 +39,9 @@ function changeActiveClass(elem, className) {
 }
 
 
+
 window.addEventListener('scroll', () => {
-    let scroll = window.pageYOffset
+   let scroll = window.pageYOffset
 
     sections.forEach(el => {
             let id = el.getAttribute('id');

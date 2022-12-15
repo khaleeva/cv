@@ -121,7 +121,7 @@ h1, h2 {
 @media (max-width: 1024px) {
   .header {
     height: 60px;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 .header .header__nav {
@@ -156,7 +156,7 @@ h1, h2 {
   .header .burger__menu-nav {
     visibility: visible;
     position: fixed;
-    top: 0;
+    top: 60px;
     right: -180px;
     max-width: 320px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -183,7 +183,6 @@ h1, h2 {
     margin-left: auto;
     position: relative;
     cursor: pointer;
-    z-index: 1000;
   }
   .header .burger__menu span {
     display: block;
