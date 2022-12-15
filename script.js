@@ -37,15 +37,11 @@ window.addEventListener('scroll', () => {
 
     sections.forEach(el => {
             let id = el.getAttribute('id');
-            let top = el.offsetTop - 50;
+            let top = el.offsetTop - 100;
             let bottom = el.offsetHeight + top;
 
 
         let currentLink = result.filter(i => i.hash.slice(1) === id)
-
-        // currentLink.map(i => i.hash.slice(1) !== 'about' ? document.querySelector('.header').style.backgroundColor = '#000'
-        //     : document.querySelector('.header').style.backgroundColor = 'transparent')
-
 
 
             if (scroll > top && scroll < bottom) {
