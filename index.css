@@ -121,7 +121,7 @@ h1, h2 {
 @media (max-width: 1024px) {
   .header {
     height: 60px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: transparent;
   }
 }
 .header .header__nav {
@@ -156,11 +156,11 @@ h1, h2 {
   .header .burger__menu-nav {
     visibility: visible;
     position: fixed;
-    top: 60px;
+    top: 0;
     right: -180px;
     max-width: 320px;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 70px 20px;
     transition: all 0.3s ease-in-out;
   }
 }
@@ -183,6 +183,7 @@ h1, h2 {
     margin-left: auto;
     position: relative;
     cursor: pointer;
+    z-index: 1000;
   }
   .header .burger__menu span {
     display: block;
