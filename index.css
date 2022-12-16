@@ -147,6 +147,7 @@ h1, h2 {
 }
 .header .active-menu {
   right: 0 !important;
+  background-color: #020202 !important;
   transition: all 0.3s ease-in-out;
 }
 .header .arrow__menu {
@@ -155,15 +156,15 @@ h1, h2 {
 @media (max-width: 1024px) {
   .header .arrow__menu {
     display: block;
-    text-align: right;
     font-size: 32px;
     color: #ffc705;
+    text-align: left;
   }
   .header .arrow__menu i {
     transition: all 0.3s ease-in-out;
   }
   .header .arrow__menu.openMenu i {
-    transform: rotate(180deg) translateX(160px);
+    transform: rotate(180deg);
     transition: all 0.3s ease-in-out;
   }
 }
@@ -179,8 +180,8 @@ h1, h2 {
     top: 0;
     right: -180px;
     max-width: 320px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 70px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
     transition: all 0.3s ease-in-out;
   }
 }
@@ -190,7 +191,7 @@ h1, h2 {
   justify-content: space-between;
 }
 .header .arrow__menu-nav ul li {
-  padding: 20px;
+  padding: 20px 60px 20px;
 }
 .header .arrow__menu-nav ul li a {
   color: #FFFFFF;
@@ -553,18 +554,27 @@ h1, h2 {
 
 .footer .footer__nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 40px 0;
+}
+.footer .footer__nav span {
+  display: block;
+  height: 40px;
+  width: 2px;
+  background-color: #ffc705;
+  margin: 0 15px;
+}
+.footer .footer__nav .git-container {
+  display: flex;
+  align-items: center;
 }
 .footer .footer__nav a {
   color: #FFFFFF;
 }
-.footer .footer__nav a span {
-  margin: 0 10px;
-}
 .footer .footer__nav a i {
-  font-size: 20px;
+  font-size: 40px;
+  margin-right: 20px;
 }
 .footer .footer__nav a img {
   width: 100px;
