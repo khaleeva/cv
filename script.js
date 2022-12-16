@@ -58,7 +58,7 @@ window.addEventListener('scroll', () => {
         arrow.style.visibility = 'hidden'
         setTimeout(() => {
             arrow.style.visibility = 'visible'
-        }, 1000)
+        }, 2000)
     }
 
     checkPositionScrollToAddActiveClass(scroll)
