@@ -39,18 +39,18 @@ main, section, header, footer {
   width: 100%;
 }
 
-.pd-80{
-  padding-top: 80px!important;
-  padding-bottom: 80px!important;
+.pd-80 {
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
 
   @media (max-width: 1024px) and (min-width: 769px) {
-    padding-top: 30px!important;
-    padding-bottom: 30px!important;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
   }
 
   @media (max-width: 768px) {
-    padding-top: 20px!important;
-    padding-bottom: 20px!important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
   }
 }
 
@@ -122,8 +122,8 @@ h1, h2 {
 
   @media (max-width: 1024px) {
     height: 60px;
-    background-color: rgba(0,0,0,0.5);
-    //background-color: transparent;
+    //background-color: rgba(0,0,0,0.5);
+    background-color: transparent;
   }
 
   .header__nav {
@@ -152,34 +152,55 @@ h1, h2 {
     }
   }
 
-  .active-menu{
+  .active-menu {
     right: 0 !important;
     transition: all 0.3s ease-in-out;
   }
 
-  .burger__menu-nav{
-    visibility: hidden;
+  .arrow__menu {
+    display: none;
+
     @media (max-width: 1024px) {
+      display: block;
+      text-align: right;
+      font-size: 32px;
+      color: #ffc705;
+
+      i{
+        transition: all 0.3s ease-in-out;
+      }
+
+      &.openMenu i {
+        transform: rotate(180deg) translateX(160px);
+        transition: all 0.3s ease-in-out;
+
+      }
+    }
+  }
+
+  .arrow__menu-nav {
+    visibility: hidden;
+    display: none;
+    @media (max-width: 1024px) {
+      display: block;
       visibility: visible;
       position: fixed;
-      top:60px;
+      top: 0;
       right: -180px;
       max-width: 320px;
-      background-color: rgba(0,0,0,0.5);
+      background-color: rgba(0, 0, 0, 0.5);
       padding: 70px 20px;
       transition: all 0.3s ease-in-out;
     }
 
 
-
-    ul{
+    ul {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
 
-      li{
+      li {
         padding: 20px;
-
 
         a {
           color: #FFFFFF;
@@ -189,65 +210,9 @@ h1, h2 {
     }
   }
 
-
-  @media (max-width: 1024px) {
-    .burger__menu {
-      width: 42px;
-      height: 28px;
-      margin-left: auto;
-      position: relative;
-      cursor: pointer;
-
-      span {
-        display: block;
-        width: 100%;
-        height: 3px;
-        background-color: #ffc705;
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-
-      &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 3px;
-        background-color: #ffc705;
-
-      }
-
-      &:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 3px;
-        background-color: #ffc705;
-      }
-
-
-      &.openMenu:before {
-        top: 55%;
-        transform: rotate(-45deg) translateY(-50%);
-      }
-
-      &.openMenu span {
-        transform: scale(0);
-      }
-
-      &.openMenu:after {
-        top: 50%;
-        transform: rotate(45deg) translateY(50%);
-      }
-    }
-  }
-
 }
 
-#about{
+#about {
   margin-top: 50px;
   background-image: url("bg.jpeg");
   background-repeat: no-repeat;
@@ -259,7 +224,7 @@ h1, h2 {
     margin-top: 0;
   }
 
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     background-position: 50% 0;
     margin-top: 0;
   }
@@ -276,7 +241,7 @@ h1, h2 {
     position: absolute;
     top: 160px;
     left: 15px;
-    @media (max-width: 1024px){
+    @media (max-width: 1024px) {
       top: 78%;
     }
 
@@ -285,7 +250,7 @@ h1, h2 {
       @media (max-width: 1024px) {
         font-size: 24px;
         line-height: 40px;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0, 0, 0, 0.5);
         padding: 0 10px;
       }
     }
@@ -446,8 +411,8 @@ h1, h2 {
           list-style-type: none;
           position: relative;
 
-          &:before{
-            content:'';
+          &:before {
+            content: '';
             display: block;
             position: absolute;
             width: 8px;
@@ -530,7 +495,8 @@ h1, h2 {
         padding-top: 20px;
         border: none;
         overflow: auto;
-        span{
+
+        span {
           color: #fff;
         }
 
@@ -546,6 +512,7 @@ h1, h2 {
     .project__container-item {
       display: flex;
       flex-direction: column;
+
       .date-project {
         margin: 10px 0;
 
@@ -611,7 +578,7 @@ h1, h2 {
           margin-left: 20px;
           cursor: pointer;
 
-          &:first-child{
+          &:first-child {
             margin-left: 0;
           }
 
