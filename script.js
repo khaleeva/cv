@@ -1,3 +1,7 @@
+window.addEventListener("load", function(event) {
+    asideMenu.style.height = contentHeight + 'px'
+});
+
 
 const navLinks = document.querySelectorAll('.nav-link')
 const asideNavLinks = document.querySelectorAll('.arrow__menu-nav-link')
@@ -5,8 +9,6 @@ const sections = document.querySelectorAll('section')
 const arrow = document.querySelector('.arrow__menu')
 const asideMenu = document.querySelector('.arrow__menu-nav')
 const contentHeight = document.documentElement.clientHeight
-
-asideMenu.style.height = contentHeight + 'px'
 
 
 arrow.addEventListener('click', function () {
