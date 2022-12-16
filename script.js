@@ -54,11 +54,12 @@ function checkPositionScrollToAddActiveClass (scroll) {
 
 window.addEventListener('scroll', () => {
     let scroll = window.pageYOffset
-    arrow.style.visibility = 'hidden'
-
-    setTimeout(() => {
-        arrow.style.visibility = 'visible'
-    }, 1000)
+    if(!arrow.classList.contains('openMenu')) {
+        arrow.style.visibility = 'hidden'
+        setTimeout(() => {
+            arrow.style.visibility = 'visible'
+        }, 1000)
+    }
 
     checkPositionScrollToAddActiveClass(scroll)
 });
