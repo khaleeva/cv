@@ -57,30 +57,6 @@ function checkPositionScrollToAddActiveClass (scroll) {
 
 window.addEventListener('scroll', () => {
     let scroll = window.pageYOffset
-    // if(!arrow.classList.contains('openMenu')) {
-    //     arrow.style.visibility = 'hidden'
-    //     setTimeout(() => {
-    //         arrow.style.visibility = 'visible'
-    //     }, 2000)
-    // }
-
-    console.log(scroll)
-
-    // if(scroll <= 700) {
-    //     // document.querySelector('.header').style.backgroundColor = 'transparent'
-    //     // asideMenu.style.top = 0 + 'px'
-    // } else if (scroll > 700){
-    //     // document.querySelector('.header').style.backgroundColor = 'rgba(0,0,0,0.7)'
-    //     // asideMenu.style.top = 60 + 'px'
-    // }
-
-    // if(scroll > 700){
-    //     document.querySelector('.header').style.backgroundColor = 'rgba(0,0,0,0.5)'
-    //    //  setTimeout(() => {
-    //    //      document.querySelector('.header').style.backgroundColor = 'transparent'
-    //    // }, 2000)
-    // }
-
     checkPositionScrollToAddActiveClass(scroll)
 });
 
