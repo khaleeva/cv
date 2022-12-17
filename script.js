@@ -1,14 +1,20 @@
-window.addEventListener("load", function(event) {
-    asideMenu.style.height = contentHeight + 'px'
-});
 
-
+const heightScreen = document.body.clientHeight
+const widthScreen = document.body.clientWidth
+const footerHeight = document.documentElement.clientHeight
 const navLinks = document.querySelectorAll('.nav-link')
 const asideNavLinks = document.querySelectorAll('.arrow__menu-nav-link')
 const sections = document.querySelectorAll('section')
 const arrow = document.querySelector('.arrow__menu')
 const asideMenu = document.querySelector('.arrow__menu-nav')
-const contentHeight = document.documentElement.clientHeight
+
+window.addEventListener("load", function() {
+    asideMenu.style.height = heightScreen + 'px'
+    if(widthScreen < 1024) {
+        document.querySelector('.footer').style.height =footerHeight + 'px'
+
+    }
+});
 
 
 arrow.addEventListener('click', function () {

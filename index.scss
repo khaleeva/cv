@@ -619,6 +619,12 @@ h1, h2 {
 
 .footer {
 
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
   .footer__nav {
     display: flex;
