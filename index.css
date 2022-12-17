@@ -434,8 +434,8 @@ h1, h2 {
   color: #ffc705;
   text-transform: uppercase;
 }
-.project .project__container .show-btn:first-child {
-  margin-right: 20px;
+.project .project__container .show-btn:last-child {
+  margin-left: 20px;
 }
 .project .project__container .show-btn:hover {
   background-color: #ffc705;
