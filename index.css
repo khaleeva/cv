@@ -386,20 +386,11 @@ h1, h2 {
   margin-top: 10px;
 }
 .experience .experience__container .experience__container-item .experience-info li {
-  list-style-type: none;
-  position: relative;
+  list-style: outside;
+  color: #ffc705;
 }
-.experience .experience__container .experience__container-item .experience-info li:before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background-color: #ffc705;
-  border-radius: 50%;
-  left: -15px;
-  top: 50%;
-  transform: translateY(-50%);
+.experience .experience__container .experience__container-item .experience-info li span {
+  color: #FFFFFF;
 }
 
 .education .education__container {

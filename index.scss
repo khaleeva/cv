@@ -408,21 +408,11 @@ h1, h2 {
         margin-top: 10px;
 
         li {
-          list-style-type: none;
-          position: relative;
+          list-style: outside;
+          color: #ffc705;
 
-          &:before {
-            content: '';
-            display: block;
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            background-color: #ffc705;
-            border-radius: 50%;
-            left: -15px;
-            top: 50%;
-            transform: translateY(-50%);
-
+          span{
+            color: #FFFFFF;
           }
         }
 
