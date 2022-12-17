@@ -412,6 +412,9 @@ h1, h2 {
   flex-direction: column;
   row-gap: 30px;
 }
+.project .project__container ._git {
+  margin-left: 20px;
+}
 .project .project__container .show-btn {
   display: flex;
   height: 35px;
@@ -424,9 +427,6 @@ h1, h2 {
   font-weight: 700;
   color: #ffc705;
   text-transform: uppercase;
-}
-.project .project__container .show-btn ._git {
-  margin-left: 20px;
 }
 .project .project__container .show-btn:hover {
   background-color: #ffc705;

@@ -444,6 +444,10 @@ h1, h2 {
     flex-direction: column;
     row-gap: 30px;
 
+    ._git {
+      margin-left: 20px;
+    }
+
     .show-btn {
       display: flex;
       height: 35px;
@@ -457,9 +461,7 @@ h1, h2 {
       color: #ffc705;
       text-transform: uppercase;
 
-      ._git {
-        margin-left: 20px;
-      }
+
 
       &:hover {
         background-color: #ffc705;
