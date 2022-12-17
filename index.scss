@@ -626,6 +626,12 @@ h1, h2 {
 
 .footer {
 
+  .footer__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   .footer__nav {
     display: flex;
     justify-content: center;
