@@ -11,7 +11,7 @@ const asideMenu = document.querySelector('.arrow__menu-nav')
 window.addEventListener("load", function() {
     asideMenu.style.height = heightScreen + 'px'
     if(widthScreen < 1024) {
-        document.querySelector('.footer').style.height = footerHeight + 'px'
+        document.querySelector('.footer').style.height = footerHeight + 100 + 'px'
 
     }
 });
