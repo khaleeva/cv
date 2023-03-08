@@ -253,7 +253,7 @@
                         <pre class="prettyprint">
     function digitalRoot(n) {
         let result = 0;
-        result = n.toString().split('').reduce((el, acc) => Number(el) + Number(acc), 0);
+        result = n.toString().split('').reduce((el, acc) =&gt; Number(el) + Number(acc), 0);
         return n.toString().length &gt; 1 ? digitalRoot(result) : n;
     }
                                 </pre>
