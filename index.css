@@ -224,7 +224,7 @@ h1, h2 {
   background-image: url("bg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 40%;
+  background-position: center center;
 }
 @media (max-width: 1024px) {
   #about {
@@ -240,7 +240,7 @@ h1, h2 {
 }
 
 .about {
-  min-height: 700px;
+  min-height: 750px;
   position: relative;
 }
 .about .about__container {
@@ -579,6 +579,11 @@ h1, h2 {
   justify-content: center;
   align-items: center;
   padding: 40px 0;
+}
+@media (max-width: 1920px) and (min-width: 1440px) {
+  .footer .footer__nav {
+    padding: 100px;
+  }
 }
 .footer .footer__nav span {
   display: block;

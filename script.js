@@ -1,4 +1,3 @@
-
 const heightScreen = document.body.clientHeight
 const widthScreen = document.body.clientWidth
 const footerHeight = document.documentElement.clientHeight

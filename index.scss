@@ -236,7 +236,7 @@ h1, h2 {
   background-image: url("bg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 40%;
+  background-position: center center;
 
   @media (max-width: 1024px) {
     background-position: 50% 25%;
@@ -250,7 +250,7 @@ h1, h2 {
 }
 
 .about {
-  min-height: 700px;
+  min-height: 750px;
   position: relative;
 
 
@@ -648,6 +648,10 @@ h1, h2 {
     justify-content: center;
     align-items: center;
     padding: 40px 0;
+
+    @media (max-width: 1920px) and (min-width: 1440px){
+      padding: 100px;
+    }
 
     span{
       display: block;
