@@ -237,6 +237,7 @@ h1, h2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  height: 100vh;
 
   @media (max-width: 1024px) {
     background-position: 50% 25%;
