@@ -251,12 +251,6 @@ h2 {
   .about__container {
     max-width: 500px;
     text-align: right;
-    //position: absolute;
-    //top: 45%;
-    //left: 150px;
-    //@media (max-width: 1024px) {
-    //  top: 78%;
-    //}
 
     h1,
     h2 {
@@ -328,7 +322,7 @@ h2 {
 .skills {
   text-align: center;
 
-  .skills__container {
+  &__container {
     padding: 40px 0;
     display: flex;
     flex-wrap: wrap;
@@ -337,7 +331,7 @@ h2 {
       padding: 20px 0;
     }
 
-    .skills__container-item {
+    &-item {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -383,8 +377,6 @@ h2 {
         img {
           width: 50px;
           height: 50px;
-          //filter: brightness(0) invert(1);
-
           @media (max-width: 420px) {
             width: 60px;
             height: 60px;
@@ -406,12 +398,12 @@ h2 {
 }
 
 .experience {
-  .experience__container {
+  &__container {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
 
-    .experience__container-item {
+    &-item {
       padding: 20px 40px;
       border: 1px solid #ffc705;
 
@@ -432,12 +424,12 @@ h2 {
 }
 
 .education {
-  .education__container {
+  &__container {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
 
-    .education__container-item {
+    &-item {
       padding: 20px 40px;
       border: 1px solid #ffc705;
     }
@@ -448,7 +440,7 @@ h2 {
   padding-top: 80px;
   padding-bottom: 80px;
 
-  .project__container {
+  &__container {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
@@ -487,7 +479,7 @@ h2 {
       }
     }
 
-    .project__container-exampleCode {
+    &-exampleCode {
       .prettyprint {
         padding-top: 20px;
         border: none;
@@ -503,7 +495,7 @@ h2 {
       }
     }
 
-    .project__container-item {
+    &-item {
       display: flex;
       flex-direction: column;
 
@@ -530,7 +522,7 @@ h2 {
   flex-direction: column;
   align-items: center;
 
-  .contacts__container {
+  &__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -552,7 +544,7 @@ h2 {
       }
     }
 
-    .contacts__container-info {
+    &-info {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -613,47 +605,10 @@ h2 {
 }
 
 .footer {
-  .footer__container {
+  height: 100vh;
+  &__container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-
-  .footer__nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 0;
-
-    @media (max-width: 1920px) and (min-width: 1440px) {
-      padding: 100px;
-    }
-
-    span {
-      display: block;
-      height: 40px;
-      width: 2px;
-      background-color: #ffc705;
-      margin: 0 15px;
-    }
-
-    .git-container {
-      display: flex;
-      align-items: center;
-    }
-
-    a {
-      color: #ffffff;
-
-      i {
-        font-size: 40px;
-        margin-right: 20px;
-      }
-
-      img {
-        width: 100px;
-        height: auto;
-      }
-    }
   }
 }

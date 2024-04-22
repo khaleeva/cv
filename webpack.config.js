@@ -17,7 +17,7 @@ module.exports = {
   },
   entry: ['@babel/polyfill', path.resolve(__dirname, 'src', 'index.js')],
   output: {
-    path: path.resolve(__dirname, 'cv/cv'),
+    path: path.resolve(__dirname, 'cv'),
     clean: true,
     filename: 'index.js',
     assetModuleFilename: 'assets/[name][ext]',

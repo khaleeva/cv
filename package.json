@@ -8,6 +8,7 @@
     "dev": "webpack --mode development",
     "build": "webpack --node-env=production --mode production",
     "predeploy": "npm run build",
+    "deploy": "gh-pages -d cv",
     "clear": "rd /s /q cv",
     "prettier": "npx prettier . --write"
   },
